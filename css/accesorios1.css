@@ -1,0 +1,516 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: arial;
+    background-color: #fafaf9;
+    font-size: 16px;
+    padding-top: 3rem; /* Espacio para que no tape el contenido el menú fijo */
+}
+.contenedor-general{
+    width:92%;
+    max-width:1400px;
+    margin:0 auto;
+}
+.cabecera {
+    background-color: #A52231;
+    border-bottom: 1px solid rgb(255, 0, 4);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+
+.menu {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.2rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    letter-spacing: 2px;
+}
+
+.botones {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.logo{
+    display:flex;
+    align-items:center;
+    text-decoration:none;
+}
+
+.logo img{
+    width:260px;
+    height:auto;
+    display:block;
+    transition:.3s ease;
+}
+
+.logo img:hover{
+    transform:scale(1.05);
+}
+
+.enlaces {
+    text-decoration: none;
+    color: blanchedalmond;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.enlaces:hover {
+    color: #A52231;
+    background-color: rgb(251, 249, 249);
+    padding: 10px;
+}
+
+.icono {
+   background-image: url("usiario.png");
+   width: 20px;
+   height: 20px;
+   background-size: cover;
+}
+/*==========================
+    RESET
+===========================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#fff;
+    color:#222;
+}
+
+img{
+    width:38%;
+    display:block;
+}
+
+button{
+    border:none;
+    cursor:pointer;
+    font-family:'Poppins',sans-serif;
+}
+
+
+/*==========================
+        HERO
+===========================*/
+
+.hero-shop{
+    width:100%;
+    height:420px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+}
+
+.hero-text{
+    background:#F9DD35;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.hero-content{
+    width:70%;
+}
+
+.hero-content h1{
+
+    font-size:64px;
+    font-weight:700;
+    color:#8A1D38;
+    margin-bottom:18px;
+    line-height:1.1;
+
+}
+
+.hero-content p{
+
+    width:320px;
+    font-size:19px;
+    line-height:1.7;
+    color:#333;
+
+}
+
+.hero-image img{
+
+    width:100%;
+    height:420px;
+    object-fit:cover;
+
+}
+
+
+
+/*==========================
+        CATEGORIAS
+===========================*/
+
+.categorias{
+    width:100%;
+    margin:70px 0;
+    display:flex;
+    justify-content:space-between;
+    gap:30px;
+}
+
+.categoria-btn{
+
+    position: relative;
+
+    width:250px;
+    height:70px;
+
+    margin-top:45px;
+
+    background:#F6C14B;
+
+    border-radius:12px;
+
+    color:#8A1D38;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    transition:.35s;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-decoration:none;
+
+}
+.icono-categoria{
+
+    position:absolute;
+
+    top:-90px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:76px;
+    height:76px;
+
+    border-radius:50%;
+
+    background:#F6C14B;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    box-shadow:0 8px 18px rgba(0,0,0,.10);
+
+}
+
+.icono-categoria i{
+
+    font-size:34px;
+
+    color:#A52231;
+
+    transition:.3s;
+
+}
+
+.categoria-btn:hover .icono-categoria{
+    background:#A52231;
+}
+
+.categorias button:hover .icono-categoria i{
+
+    color:#fff;
+
+}
+
+.categoria-btn:hover{
+    background:#8A1D38;
+    color:white;
+}
+
+
+/*==========================
+        PRODUCTOS
+===========================*/
+
+.productos{
+    width:100%;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:65px 45px;
+    margin-bottom:100px;
+}
+
+
+
+/*==========================
+        TARJETA
+===========================*/
+
+.card{
+    width:100%;
+}
+
+.card img{
+    width:100%;
+    height:390px;
+    object-fit:cover;
+}
+
+.card h3{
+
+    margin-top:18px;
+
+    font-size:28px;
+
+    font-weight:500;
+
+    color:#222;
+
+}
+
+.precio{
+
+    display:block;
+
+    margin-top:5px;
+
+    margin-bottom:18px;
+
+    font-size:22px;
+     font-weight:700;
+
+    color:#8A1D38;
+
+}
+
+
+/*==========================
+        TALLAS
+===========================*/
+
+.tallas{
+
+    display:flex;
+
+    gap:12px;
+
+    margin-bottom:18px;
+
+}
+
+.tallas span{
+
+    width:42px;
+
+    height:42px;
+
+    border-radius:8px;
+
+    background:#F6C14B;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:#8A1D38;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.tallas span:hover{
+
+    background:#8A1D38;
+
+    color:white;
+
+}
+
+
+/*==========================
+        ESTRELLAS
+===========================*/
+
+.rating{
+
+    color:#8A1D38;
+
+    font-size:22px;
+
+    letter-spacing:4px;
+
+}
+
+.pie-pagina {
+    background-color: #a71d31;
+    width: 100%;
+    height: auto; /* Mejor auto para que se ajuste al contenido */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 4rem;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.pie-columna {
+    flex: 1;
+    color: #faf4f4;
+}
+
+.logo-columna {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.logo-footer {
+    width: 90px;
+    height: auto;
+    margin-bottom: 0.5rem;
+}
+
+.centrada {
+    text-align: center;
+}
+
+.pie-columna h3 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.7rem;
+    text-transform: uppercase;
+}
+
+.pie-columna p {
+    font-size: 0.85rem;
+    line-height: 1.4;
+    margin: 0.2rem 0;
+}
+/*=================================
+        RESPONSIVE
+==================================*/
+
+@media (max-width:768px){
+
+    body{
+        padding-top:120px;
+    }
+
+    /* HEADER */
+
+    .menu{
+        flex-direction:column;
+        padding:15px;
+        gap:15px;
+    }
+
+    .botones{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:12px;
+    }
+
+    .logo{
+        font-size:1.5rem;
+    }
+
+    .enlaces{
+        font-size:.85rem;
+    }
+
+    /* HERO */
+
+    .hero-shop{
+        grid-template-columns:1fr;
+        height:auto;
+    }
+
+    .hero-text{
+        padding:50px 25px;
+    }
+
+    .hero-content{
+        width:100%;
+        text-align:center;
+    }
+
+    .hero-content h1{
+        font-size:40px;
+    }
+
+    .hero-content p{
+        width:100%;
+        font-size:17px;
+    }
+
+    .hero-image img{
+        height:280px;
+    }
+
+    /* CATEGORÍAS */
+
+    .categorias{
+        display:grid;
+        grid-template-columns:repeat(2,1fr);
+        gap:80px 20px;
+        margin:70px 0;
+    }
+
+    .categorias button{
+        width:100%;
+    }
+
+    /* PRODUCTOS */
+
+    .productos{
+        grid-template-columns:repeat(2,1fr);
+        gap:30px;
+    }
+
+    .card img{
+        height:280px;
+    }
+
+    .card h3{
+        font-size:22px;
+    }
+
+    .precio{
+        font-size:20px;
+    }
+
+    /* FOOTER */
+
+    .pie-pagina{
+        flex-direction:column;
+        text-align:center;
+        padding:40px 25px;
+    }
+
+}

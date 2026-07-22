@@ -1,0 +1,1083 @@
+
+
+/*==============================
+        RESET GENERAL
+===============================*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    background: #f8f4ef;
+    color: #2f2f2f;
+    line-height: 1.6;
+}
+
+/*==============================
+        CABECERA
+===============================*/
+
+.cabecera{
+    background-color: #A52231;
+    border-bottom: 1px solid rgb(255, 0, 4);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.menu{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.2rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    letter-spacing: 2px;
+}
+
+.contenedor-general{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 4rem;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    text-decoration:none;
+}
+
+.logo img{
+    width:260px;
+    height:auto;
+    display:block;
+    transition:.3s ease;
+}
+
+.logo img:hover{
+    transform:scale(1.05);
+}
+
+.botones{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.enlaces{
+    text-decoration: none;
+    color: blanchedalmond;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.enlaces:hover{
+    color: #A52231;
+    background: white;
+    padding: 10px;
+}
+
+.icono{
+    background-image: url("usiario.png");
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+}
+   
+
+.image-x {
+    background-color: #e0e0e0;
+    border: 2px solid #000000;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 150px;
+}
+   
+.image-x::before, .image-x::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #000000;
+    top: 50%;
+    left: 0;
+}
+.image-x::before { transform: rotate(20deg); }
+.image-x::after { transform: rotate(-20deg); }
+.btn-dark{
+    display:inline-block;
+    padding:15px 35px;
+    background:#F06464;
+    color:white;
+    text-decoration:none;
+    border-radius:6px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn-dark:hover{
+    background:#d84f4f;
+    transform:translateY(-3px);
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    background-color: #b73e3e; /* Fondo rojo de los botones de navegación */
+    color: #ffffff;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.header-icons {
+    display: flex;
+    gap: 15px;
+    font-size: 1.3rem;
+}
+
+/* ==========================================
+   3. SECCIÓN 1: SLIDER / HERO (Gris)
+   ========================================== */
+
+
+/* ---------------------- BANNER PRINCIPAL ---------------------- */
+.banner-principal{
+    width:100%;
+    height:600px;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+}
+
+
+
+.boton-rojo {
+    padding: 0.65rem 2.2rem;
+    background-color: #f06464;
+    color: #000000;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* IMAGEN A LA DERECHA, OCUPA TODO EL ALTO */
+.banner-video{
+    width:100%;
+    height:100%;
+    overflow:hidden;
+}
+
+.banner-video video{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+/* Capa roja */
+
+.overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(165,34,49,.55);
+
+    z-index:1;
+
+}
+
+/* Texto */
+
+.hero-texto{
+
+    position:absolute;
+
+    top:50%;
+
+    left:50%;
+
+    transform:translate(-50%,-50%);
+
+    text-align:center;
+
+    z-index:2;
+
+    width:90%;
+
+}
+
+.hero-texto h1{
+    font-family:'Poppins', sans-serif;
+    color:#fff;
+    font-size:3.5rem;
+    line-height:1.1;
+    font-weight:800;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    margin-bottom:30px;
+}
+
+.linea{
+
+    width:260px;
+
+    height:2px;
+
+    background:#F2B632;
+
+    margin:0 auto 25px;
+
+}
+
+.hero-texto p{
+
+    font-family:'Poppins',sans-serif;
+
+    color:#fafaf9;
+
+    letter-spacing:6px;
+
+    font-size:22px;
+
+    font-weight:500;
+
+}
+.logo-banner{
+    width:150px;
+    height:auto;
+    margin-top:5px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+
+
+/*=========================
+      NOSOTROS
+==========================*/
+
+/*==================================
+            NOSOTROS
+==================================*/
+
+.nosotros{
+    width:100%;
+    background:#ffffff;
+    padding:90px 8%;
+}
+
+.contenedor{
+    max-width:1200px;
+    margin:0 auto;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    align-items:center;
+    gap:70px;
+}
+
+/* Imagen */
+
+.imagen img{
+    width:100%;
+    height:420px;
+    object-fit:cover;
+    border-radius:10px;
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+}
+
+/* Texto */
+
+.texto{
+    color:#2f2f2f;
+}
+
+.texto h2{
+    font-size:2.4rem;
+    color:#A52231;
+    font-weight:800;
+    letter-spacing:2px;
+    margin-bottom:25px;
+}
+
+.texto p{
+    font-size:1rem;
+    line-height:1.8;
+    color:#555;
+    margin-bottom:20px;
+}
+
+.boton{
+    display:inline-flex;
+    align-items:center;
+    gap:12px;
+    margin-top:15px;
+    padding:15px 35px;
+    background:#A52231;
+    color:#fff;
+    text-decoration:none;
+    border-radius:6px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.boton:hover{
+    background:#7d1723;
+    transform:translateY(-4px);
+}
+
+/* ==========================================
+   5. SECCIÓN 3: DESTACADOS (Verde Menta)
+   ========================================== */
+/*==================================
+            DESTACADOS
+==================================*/
+
+.seccion-destacados{
+    width:100%;
+    background:#fff;
+    padding:80px 5%;
+}
+
+.titulo-con-lineas{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.titulo-con-lineas h2{
+    font-size:2.4rem;
+    font-weight:800;
+    color:#A52231;
+    text-transform:uppercase;
+    letter-spacing:2px;
+}
+
+.contenido-destacados{
+    max-width:1200px;
+    margin:0 auto 50px;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:35px;
+}
+
+.tarjeta{
+
+    transition:.35s;
+    cursor:pointer;
+
+}
+
+.tarjeta:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.cuadro-imagen{
+    width:100%;
+    height:280px;
+    overflow:hidden;
+    border-radius:8px;
+
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.20);
+}
+
+.cuadro-imagen img{
+
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.4s;
+
+}
+
+.tarjeta:hover img{
+
+    transform:scale(1.05);
+
+}
+
+.tarjeta h3{
+
+    margin-top:18px;
+    font-size:1rem;
+    color:#222;
+    font-weight:700;
+
+}
+
+.tarjeta p{
+
+    margin-top:8px;
+    font-size:.95rem;
+    color:#777;
+
+}
+
+.boton-centro{
+
+    text-align:center;
+
+}
+
+
+
+/*==================================
+      ¿POR QUÉ ELEGIRNOS?
+==================================*/
+
+.why-choose-us{
+    width:100%;
+    background:#fff;
+    padding:80px 5%;
+    text-align:center;
+}
+
+.why-choose-us h2{
+    font-size:2.4rem;
+    font-weight:800;
+    color:#A52231;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    margin-bottom:60px;
+}
+
+.benefits-grid{
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:35px;
+}
+
+.benefit-item{
+    padding:30px 20px;
+    border-radius:10px;
+    transition:.35s;
+}
+
+.benefit-item:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 30px rgba(0,0,0,.08);
+}
+
+/* CÍRCULO */
+
+.circle-icon{
+    width:100px;
+    height:100px;
+    background:#F8EBCB;
+    border-radius:50%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    margin:0 auto 25px;
+    transition:.35s;
+}
+
+/* ICONO */
+
+.circle-icon i{
+    font-size:40px;
+    color:#A52231;
+    transition:.35s;
+}
+
+.benefit-item:hover .circle-icon{
+    transform:scale(1.08);
+}
+
+.benefit-item:hover .circle-icon i{
+    transform:scale(1.12);
+}
+
+.benefit-item h3{
+    font-size:1.1rem;
+    color:#222;
+    margin-bottom:15px;
+    font-weight:700;
+}
+
+.benefit-item p{
+    font-size:.95rem;
+    line-height:1.8;
+    color:#666;
+}
+
+/* ==========================================
+   7. SECCIÓN 5: BLOG & GUÍA DE TALLAS (Verde Menta)
+   ========================================== */
+/*==================================
+            BLOG
+==================================*/
+
+.seccion-blog{
+    width:100%;
+    background:#fff;
+    padding:80px 5%;
+}
+
+.seccion-blog h2{
+
+    text-align:center;
+    font-size:2.4rem;
+    font-weight:800;
+    color:#A52231;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    margin-bottom:50px;
+
+}
+
+.contenido-blog{
+
+    max-width:1200px;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:3fr 1fr;
+    gap:40px;
+    align-items:start;
+
+}
+
+.entradas-blog{
+
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+
+}
+
+.entrada{
+
+    transition:.35s;
+    cursor:pointer;
+
+}
+
+.entrada:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.cuadro-imagen{
+
+    width:100%;
+    height:180px;
+    overflow:hidden;
+    border-radius:8px;
+
+}
+
+.cuadro-imagen img{
+
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.4s;
+
+}
+
+.entrada:hover img{
+
+    transform:scale(1.05);
+
+}
+
+.entrada h3{
+    margin-top:18px;   /* Puedes ajustar este valor */
+    margin-bottom:10px;
+    font-size:1rem;
+    font-weight:700;
+}
+
+.entrada p{
+
+    color:#666;
+    font-size:.95rem;
+    line-height:1.7;
+
+}
+/*==================================
+        GUÍA DE TALLAS
+==================================*/
+
+.size-guide-card{
+
+    background:#F6FA98;
+    border-radius:20px;
+
+    padding:35px 25px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    transition:.35s;
+
+}
+
+.size-guide-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.10);
+
+}
+
+.size-guide-card h3{
+
+    font-size:1.4rem;
+    margin-bottom:20px;
+    color:#222;
+
+}
+
+.size-guide-card p{
+
+    font-size:.95rem;
+    line-height:1.8;
+    color:#555;
+    margin-bottom:25px;
+
+}
+/* ==========================================
+   8. SECCIÓN 6: INSTAGRAM & WHATSAPP (Rosa)
+   ========================================== */
+/*==================================
+      INSTAGRAM + WHATSAPP
+==================================*/
+
+.instagram-whatsapp{
+    width:100%;
+    background:#FFFFFF;
+    padding:80px 5%;
+
+    display:grid;
+    grid-template-columns:3fr 1fr;
+    gap:40px;
+    align-items:center;
+}
+
+/*=========================
+      INSTAGRAM
+=========================*/
+
+.instagram-box h2{
+
+    font-size:2.4rem;
+    font-weight:800;
+    color:#A52231;
+
+    text-align:center;
+
+    text-transform:uppercase;
+
+    letter-spacing:2px;
+
+    margin-bottom:45px;
+
+}
+
+.galeria{
+
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+
+    gap:20px;
+
+}
+
+.galeria img{
+
+    width:100%;
+    height:200px;
+
+    object-fit:cover;
+
+    border-radius:8px;
+
+    transition:.35s;
+
+    cursor:pointer;
+
+}
+
+.galeria img:hover{
+
+    transform:scale(1.05);
+
+}
+
+/*=========================
+        WHATSAPP
+=========================*/
+
+.whatsapp-box{
+
+    background:#F6FA98;
+
+    padding:40px 25px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    transition:.35s;
+
+}
+
+.whatsapp-box:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 15px 30px rgba(0,0,0,.10);
+
+}
+
+.whatsapp-box h3{
+
+    font-size:1.6rem;
+
+    margin-bottom:20px;
+
+    color:#222;
+
+}
+
+.whatsapp-box p{
+
+    font-size:1rem;
+
+    color:#555;
+
+    margin-bottom:30px;
+
+}
+/* ==========================================
+   9. PIE DE PÁGINA (FOOTER)
+   ========================================== */
+/*==================================
+            FOOTER
+==================================*/
+
+.pie-pagina{
+    background-color:#A71D31;
+    width:100%;
+    min-height:197px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:35px 4rem;
+    gap:2rem;
+    flex-wrap:wrap;
+}
+
+.pie-columna{
+    flex:1;
+    color:#FAF4F4;
+    min-width:180px;
+}
+
+.logo-columna{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+}
+
+.logo-footer{
+    width:90px;
+    height:auto;
+    margin-bottom:10px;
+}
+
+.centrada{
+    text-align:center;
+}
+
+.pie-columna h3{
+    font-size:1rem;
+    font-weight:700;
+    margin-bottom:12px;
+    text-transform:uppercase;
+    letter-spacing:1px;
+}
+
+.pie-columna p{
+    font-size:.85rem;
+    line-height:1.6;
+    margin:4px 0;
+}
+
+/*==================================
+        RESPONSIVE
+==================================*/
+
+@media (max-width:1200px){
+
+    .contenido-destacados{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .benefits-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .entradas-blog{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .galeria{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+@media (max-width:992px){
+
+    body{
+        padding-top:120px;
+    }
+
+    /* HEADER */
+
+    .menu{
+        flex-direction:column;
+        gap:15px;
+        padding:15px;
+    }
+
+    .botones{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:12px;
+    }
+
+    .logo{
+        font-size:1.5rem;
+    }
+
+    .enlaces{
+        font-size:.85rem;
+    }
+
+    /* HERO */
+
+    .banner-principal{
+        height:500px;
+    }
+
+    .hero-texto h1{
+        font-size:52px;
+    }
+
+    .hero-texto p{
+        font-size:18px;
+        letter-spacing:4px;
+    }
+
+    /* NOSOTROS */
+
+    .contenedor{
+        grid-template-columns:1fr;
+        gap:40px;
+    }
+
+    .texto{
+        text-align:center;
+    }
+
+    .imagen img{
+        height:380px;
+    }
+
+    /* DESTACADOS */
+
+    .contenido-destacados{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    /* BENEFICIOS */
+
+    .benefits-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    /* BLOG */
+
+    .contenido-blog{
+        grid-template-columns:1fr;
+    }
+
+    .size-guide-card{
+        max-width:500px;
+        margin:auto;
+    }
+
+    /* INSTAGRAM */
+
+    .instagram-whatsapp{
+        grid-template-columns:1fr;
+    }
+
+    .whatsapp-box{
+        max-width:500px;
+        margin:auto;
+    }
+
+    /* FOOTER */
+
+    .pie-pagina{
+        flex-direction:column;
+        text-align:center;
+        padding:40px 25px;
+        gap:30px;
+    }
+
+}
+
+@media (max-width:768px){
+
+    body{
+        padding-top:130px;
+    }
+
+    .banner-principal{
+        height:420px;
+    }
+
+    .hero-texto h1{
+        font-size:40px;
+    }
+
+    .hero-texto p{
+        font-size:16px;
+        letter-spacing:3px;
+    }
+
+    .linea{
+        width:180px;
+    }
+
+    .nosotros,
+    .seccion-destacados,
+    .why-choose-us,
+    .seccion-blog,
+    .instagram-whatsapp{
+        padding:60px 25px;
+    }
+
+    .contenido-destacados{
+        grid-template-columns:1fr;
+    }
+
+    .benefits-grid{
+        grid-template-columns:1fr;
+    }
+
+    .entradas-blog{
+        grid-template-columns:1fr;
+    }
+
+    .galeria{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .instagram-box h2,
+    .why-choose-us h2,
+    .seccion-blog h2,
+    .titulo-con-lineas h2,
+    .texto h2{
+        font-size:2rem;
+    }
+
+}
+
+@media (max-width:480px){
+
+    body{
+        padding-top:145px;
+    }
+
+    .logo{
+        font-size:1.25rem;
+    }
+
+    .enlaces{
+        font-size:.78rem;
+    }
+
+    .banner-principal{
+        height:350px;
+    }
+
+    .hero-texto h1{
+        font-size:30px;
+    }
+
+    .hero-texto p{
+        font-size:14px;
+        letter-spacing:2px;
+    }
+
+    .linea{
+        width:140px;
+    }
+
+    .imagen img{
+        height:260px;
+    }
+
+    .cuadro-imagen{
+        height:240px;
+    }
+
+    .galeria{
+        grid-template-columns:1fr;
+    }
+
+    .galeria img{
+        height:220px;
+    }
+
+    .circle-icon{
+        width:80px;
+        height:80px;
+    }
+
+    .circle-icon i{
+        font-size:32px;
+    }
+
+    .pie-pagina{
+        padding:35px 20px;
+    }
+
+}
