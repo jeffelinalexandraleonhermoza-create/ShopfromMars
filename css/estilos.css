@@ -905,116 +905,54 @@ nav ul li a {
 
 @media (max-width:768px){
 
-    /* CABECERA */
+    /*==============================
+      CABECERA RESPONSIVE
+==============================*/
+
+@media (max-width:768px){
 
     .cabecera{
         position:relative;
+        width:100%;
+    }
+
+    body{
+        padding-top:0;
     }
 
     .menu{
-
         display:flex;
         flex-direction:column;
-        justify-content:center;
         align-items:center;
-
-        padding:20px 15px;
-
+        justify-content:center;
         gap:18px;
-
+        padding:20px 15px;
     }
 
     .logo img{
-
         width:190px;
-
+        height:auto;
     }
 
     .botones{
-
         display:flex;
-
         justify-content:center;
-
         flex-wrap:wrap;
-
         gap:10px 15px;
-
         max-width:260px;
-
     }
 
-    .enlaces{
-
-        font-size:11px;
-
-        letter-spacing:2px;
-
-        padding:0;
-
-        background:none;
-
+     .enlaces{
+        font-size:.65rem;
     }
 
     .enlaces:hover{
-
         color:#F2B632;
-
         background:none;
-
         padding:0;
-
     }
 
-    .icono{
-
-        display:none;
-
-    }
-
-
-    /* HERO */
-
-    .banner-principal{
-
-        height:500px;
-
-    }
-
-    .hero-texto{
-
-        width:92%;
-
-    }
-
-    .hero-texto h1{
-
-        font-size:2rem;
-
-        line-height:1.2;
-
-    }
-
-    .hero-texto p{
-
-        font-size:15px;
-
-        letter-spacing:2px;
-
-    }
-
-    .logo-banner{
-
-        width:110px;
-
-    }
-
-    .linea{
-
-        width:170px;
-
-    }
-
+}
 
     /* NOSOTROS */
 
@@ -1136,7 +1074,7 @@ nav ul li a {
 
     .logo img{
 
-        width:170px;
+        width:200px;
 
     }
 

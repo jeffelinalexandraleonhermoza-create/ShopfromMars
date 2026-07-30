@@ -505,11 +505,8 @@ button{
         max-width:260px;
     }
 
-    .enlaces{
-        font-size:11px;
-        letter-spacing:2px;
-        padding:0;
-        background:none;
+     .enlaces{
+        font-size:.65rem;
     }
 
     .enlaces:hover{
@@ -597,7 +594,7 @@ button{
 @media (max-width:480px){
 
     .logo img{
-        width:170px;
+        width:200px;
     }
 
     .hero-text{
