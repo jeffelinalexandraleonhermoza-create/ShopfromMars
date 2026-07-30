@@ -184,38 +184,25 @@ nav ul li a {
 
 
 .banner-video{
-
     position:absolute;
-    top:0;
-    left:0;
-
-    width:100%;
-    height:100%;
-
+    inset:0;
+    z-index:0;
+    overflow:hidden;
 }
 
 .banner-video video{
-
+    display:block;
     width:100%;
     height:100%;
     object-fit:cover;
-
 }
 /* Capa roja */
 
 .overlay{
-
     position:absolute;
-    top:0;
-    left:0;
-
-    width:100%;
-    height:100%;
-
+    inset:0;
     background:rgba(165,34,49,.55);
-
     z-index:1;
-
 }
 
 /* Texto */
@@ -277,7 +264,7 @@ nav ul li a {
 .logo-banner{
     width:150px;
     height:auto;
-    margin-top:5px;
+    margin-top:0px;
     display:block;
     margin-left:auto;
     margin-right:auto;
@@ -853,62 +840,22 @@ nav ul li a {
         RESPONSIVE
 ==================================*/
 
-@media (max-width:1200px){
-
-    .contenido-destacados{
-        grid-template-columns:repeat(2,1fr);
-    }
-
-    .benefits-grid{
-        grid-template-columns:repeat(2,1fr);
-    }
-
-    .entradas-blog{
-        grid-template-columns:repeat(2,1fr);
-    }
-
-    .galeria{
-        grid-template-columns:repeat(2,1fr);
-    }
-
-}
+/*==============================
+      TABLETS
+==============================*/
 
 @media (max-width:992px){
 
-    body{
-        padding-top:120px;
-    }
-
-    /* HEADER */
-
     .menu{
-        flex-direction:column;
-        gap:15px;
-        padding:15px;
+        padding:18px 25px;
     }
 
-    .botones{
-        flex-wrap:wrap;
-        justify-content:center;
-        gap:12px;
-    }
-
-    .logo{
-        font-size:1.5rem;
-    }
-
-    .enlaces{
-        font-size:.85rem;
-    }
-
-    /* HERO */
-
-    .banner-principal{
-        height:500px;
+    .logo img{
+        width:220px;
     }
 
     .hero-texto h1{
-        font-size:52px;
+        font-size:2.8rem;
     }
 
     .hero-texto p{
@@ -916,106 +863,32 @@ nav ul li a {
         letter-spacing:4px;
     }
 
-    /* NOSOTROS */
-
     .contenedor{
         grid-template-columns:1fr;
-        gap:40px;
-    }
-
-    .texto{
-        text-align:center;
+        gap:50px;
     }
 
     .imagen img{
         height:380px;
     }
 
-    /* DESTACADOS */
-
     .contenido-destacados{
         grid-template-columns:repeat(2,1fr);
     }
 
-    /* BENEFICIOS */
-
     .benefits-grid{
         grid-template-columns:repeat(2,1fr);
     }
-
-    /* BLOG */
 
     .contenido-blog{
         grid-template-columns:1fr;
     }
 
-    .size-guide-card{
-        max-width:500px;
-        margin:auto;
-    }
-
-    /* INSTAGRAM */
-
-    .instagram-whatsapp{
-        grid-template-columns:1fr;
-    }
-
-    .whatsapp-box{
-        max-width:500px;
-        margin:auto;
-    }
-
-    /* FOOTER */
-
-    .pie-pagina{
-        flex-direction:column;
-        text-align:center;
-        padding:40px 25px;
-        gap:30px;
-    }
-
-}
-
-@media (max-width:768px){
-
-    body{
-        padding-top:130px;
-    }
-
-    .banner-principal{
-        height:420px;
-    }
-
-    .hero-texto h1{
-        font-size:40px;
-    }
-
-    .hero-texto p{
-        font-size:16px;
-        letter-spacing:3px;
-    }
-
-    .linea{
-        width:180px;
-    }
-
-    .nosotros,
-    .seccion-destacados,
-    .why-choose-us,
-    .seccion-blog,
-    .instagram-whatsapp{
-        padding:60px 25px;
-    }
-
-    .contenido-destacados{
-        grid-template-columns:1fr;
-    }
-
-    .benefits-grid{
-        grid-template-columns:1fr;
-    }
-
     .entradas-blog{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .instagram-whatsapp{
         grid-template-columns:1fr;
     }
 
@@ -1023,74 +896,289 @@ nav ul li a {
         grid-template-columns:repeat(2,1fr);
     }
 
-    .instagram-box h2,
-    .why-choose-us h2,
-    .seccion-blog h2,
-    .titulo-con-lineas h2,
-    .texto h2{
+}
+
+
+/*==============================
+      CELULARES
+==============================*/
+
+@media (max-width:768px){
+
+    /* CABECERA */
+
+    .cabecera{
+        position:relative;
+    }
+
+    .menu{
+
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+
+        padding:20px 15px;
+
+        gap:18px;
+
+    }
+
+    .logo img{
+
+        width:190px;
+
+    }
+
+    .botones{
+
+        display:flex;
+
+        justify-content:center;
+
+        flex-wrap:wrap;
+
+        gap:10px 15px;
+
+        max-width:260px;
+
+    }
+
+    .enlaces{
+
+        font-size:11px;
+
+        letter-spacing:2px;
+
+        padding:0;
+
+        background:none;
+
+    }
+
+    .enlaces:hover{
+
+        color:#F2B632;
+
+        background:none;
+
+        padding:0;
+
+    }
+
+    .icono{
+
+        display:none;
+
+    }
+
+
+    /* HERO */
+
+    .banner-principal{
+
+        height:500px;
+
+    }
+
+    .hero-texto{
+
+        width:92%;
+
+    }
+
+    .hero-texto h1{
+
         font-size:2rem;
+
+        line-height:1.2;
+
+    }
+
+    .hero-texto p{
+
+        font-size:15px;
+
+        letter-spacing:2px;
+
+    }
+
+    .logo-banner{
+
+        width:110px;
+
+    }
+
+    .linea{
+
+        width:170px;
+
+    }
+
+
+    /* NOSOTROS */
+
+    .nosotros{
+
+        padding:70px 25px;
+
+    }
+
+    .texto h2{
+
+        font-size:2rem;
+
+        text-align:center;
+
+    }
+
+    .texto{
+
+        text-align:center;
+
+    }
+
+    .imagen img{
+
+        height:300px;
+
+    }
+
+
+    /* DESTACADOS */
+
+    .titulo-con-lineas h2{
+
+        font-size:2rem;
+
+    }
+
+    .contenido-destacados{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    /* BENEFICIOS */
+
+    .why-choose-us h2{
+
+        font-size:2rem;
+
+    }
+
+    .benefits-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    /* BLOG */
+
+    .seccion-blog h2{
+
+        font-size:2rem;
+
+    }
+
+    .entradas-blog{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    /* INSTAGRAM */
+
+    .instagram-box h2{
+
+        font-size:2rem;
+
+    }
+
+    .galeria{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .galeria img{
+
+        height:160px;
+
+    }
+
+
+    /* FOOTER */
+
+    .pie-pagina{
+
+        flex-direction:column;
+
+        justify-content:center;
+
+        text-align:center;
+
+        padding:40px 25px;
+
     }
 
 }
 
+
+/*==============================
+    CELULARES PEQUEÑOS
+==============================*/
+
 @media (max-width:480px){
 
-    body{
-        padding-top:145px;
-    }
+    .logo img{
 
-    .logo{
-        font-size:1.25rem;
-    }
+        width:170px;
 
-    .enlaces{
-        font-size:.78rem;
-    }
-
-    .banner-principal{
-        height:350px;
     }
 
     .hero-texto h1{
-        font-size:30px;
+
+        font-size:1.6rem;
+
     }
 
     .hero-texto p{
-        font-size:14px;
-        letter-spacing:2px;
+
+        font-size:13px;
+
+        letter-spacing:1px;
+
     }
 
-    .linea{
-        width:140px;
+    .logo-banner{
+
+        width:90px;
+
     }
 
     .imagen img{
-        height:260px;
-    }
 
-    .cuadro-imagen{
         height:240px;
+
     }
 
     .galeria{
+
         grid-template-columns:1fr;
+
     }
 
-    .galeria img{
-        height:220px;
-    }
+    .boton,
+    .btn-dark{
 
-    .circle-icon{
-        width:80px;
-        height:80px;
-    }
+        width:100%;
 
-    .circle-icon i{
-        font-size:32px;
-    }
+        justify-content:center;
 
-    .pie-pagina{
-        padding:35px 20px;
     }
 
 }
